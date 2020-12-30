@@ -1,5 +1,5 @@
 {
-  "name": "@youngtailors/react-native-spring-scrollview",
+  "name": "@syt/react-native-spring-scrollview",
   "version": "2.1.0-rc.4",
   "description": "A cross-platform (iOS & Android) spring ScrollView",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "bounces",
     "cross-platform"
   ],
-  "author": "bolan9999 <shanshang130@gmail.com>",
+  "author": "ham@sfmail.sf-express.com",
   "license": "MIT",
   "peerDependencies": {
     "lottie-react-native": "latest",
