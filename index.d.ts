@@ -6,9 +6,9 @@
  * Description:
  */
 
-declare module '@youngtailors/react-native-spring-scrollview' {
-  import {Animated, ViewProps, ViewStyle} from 'react-native';
-  import * as React from 'react';
+declare module "@yujinghan/react-native-spring-scrollview" {
+  import { Animated, ViewProps, ViewStyle } from "react-native";
+  import * as React from "react";
 
   export interface Offset {
     x: number;
@@ -25,9 +25,9 @@ declare module '@youngtailors/react-native-spring-scrollview' {
     y?: Animated.Value;
   }
 
-  export type RefreshStyle = 'topping' | 'stickyScrollView' | 'stickyContent';
+  export type RefreshStyle = "topping" | "stickyScrollView" | "stickyContent";
 
-  export type LoadingStyle = 'bottoming' | 'stickyScrollView' | 'stickyContent';
+  export type LoadingStyle = "bottoming" | "stickyScrollView" | "stickyContent";
 
   export interface ScrollEvent {
     nativeEvent: {
@@ -39,12 +39,12 @@ declare module '@youngtailors/react-native-spring-scrollview' {
   }
 
   export type HeaderStatus =
-    | 'waiting'
-    | 'pulling'
-    | 'pullingEnough'
-    | 'pullingCancel'
-    | 'refreshing'
-    | 'rebound';
+    | "waiting"
+    | "pulling"
+    | "pullingEnough"
+    | "pullingCancel"
+    | "refreshing"
+    | "rebound";
 
   export interface RefreshHeaderPropType {
     maxHeight: number;
@@ -61,14 +61,14 @@ declare module '@youngtailors/react-native-spring-scrollview' {
   export class NormalHeader extends RefreshHeader {}
 
   export type FooterStatus =
-    | 'waiting'
-    | 'dragging'
-    | 'draggingEnough'
-    | 'draggingCancel'
-    | 'releaseRebound'
-    | 'loading'
-    | 'rebound'
-    | 'allLoaded';
+    | "waiting"
+    | "dragging"
+    | "draggingEnough"
+    | "draggingCancel"
+    | "releaseRebound"
+    | "loading"
+    | "rebound"
+    | "allLoaded";
 
   export interface LoadingFooterPropType {
     maxHeight: number;
@@ -119,9 +119,7 @@ declare module '@youngtailors/react-native-spring-scrollview' {
     onSizeChange?: (size: Size) => any;
     onContentSizeChange?: (size: Size) => any;
   }
-  export class SpringScrollView extends React.PureComponent<
-    SpringScrollViewPropType
-  > {
+  export class SpringScrollView extends React.PureComponent<SpringScrollViewPropType> {
     scrollTo(offset: Offset, animated?: boolean): Promise<void>;
     scroll(offset: Offset, animated?: boolean): Promise<void>;
     scrollToBegin(animated?: boolean): Promise<void>;
